@@ -60,7 +60,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class ApiDocumentation {
 
 	@Rule
-	public final JUnitRestDocumentation restDocumentation = new JUnitRestDocumentation();
+	public final JUnitRestDocumentation restDocumentation = new JUnitRestDocumentation("target/generated-snippets");
 
 	@Autowired
 	private NoteRepository noteRepository;
