@@ -56,7 +56,7 @@ import com.jayway.jsonpath.JsonPath;
 public class GettingStartedDocumentation {
 
 	@Rule
-	public final JUnitRestDocumentation restDocumentation = new JUnitRestDocumentation();
+	public final JUnitRestDocumentation restDocumentation = new JUnitRestDocumentation("target/generated-snippets");
 
 	@Autowired
 	private ObjectMapper objectMapper;
